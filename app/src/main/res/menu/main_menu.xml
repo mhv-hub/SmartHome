@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Quick"
+        android:id="@+id/quick"
+        android:orderInCategory="1"
+        android:icon="@drawable/quick"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="refresh"
+        android:id="@+id/ref"
+        android:icon="@drawable/refbut"
+        android:orderInCategory="2"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:title="Contact"
+        android:id="@+id/menu_contact"
+        android:icon="@drawable/contactbutton"
+        android:numericShortcut="2"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:title="help"
+        android:id="@+id/menu_help"
+        android:icon="@drawable/aboutbutton"
+        android:numericShortcut="3"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="Authorised Numbers"
+        android:id="@+id/menu_auth_num"
+        app:showAsAction="never"/>
+
+
+
+
+</menu>

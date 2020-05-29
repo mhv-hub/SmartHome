@@ -1,0 +1,199 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".fragment.TwoFragment"
+    android:background="@color/fragementColor">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/msg"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="12dp"
+            android:text="FORGET ABOUT REMOTE, CONTROL WITH MOBILE" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/sd"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/offbutton"/>
+
+        <Button
+            android:id="@+id/mute"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mutebutton"
+            android:layout_marginLeft="120dp"/>
+        <Button
+            android:id="@+id/two"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/twobutton"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/sd"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/one"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/onebutton"
+            android:layout_below="@+id/sd"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/three"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/threebutton"
+            android:layout_below="@+id/sd"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"/>
+
+
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/fourbutton"
+            android:layout_below="@+id/one"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/five"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/fivebutton"
+            android:layout_below="@+id/two"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"/>
+        <Button
+            android:id="@+id/six"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/sixbutton"
+            android:layout_below="@+id/three"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="160dp"/>
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/sevenbutton"
+            android:layout_below="@+id/four"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/eightbutton"
+            android:layout_below="@+id/five"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"/>
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ninebutton"
+            android:layout_below="@+id/six"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="160dp"/>
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/zerobutton"
+            android:layout_below="@+id/eight"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="160dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/chback"
+            android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/chup"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/chupbutton"
+        android:layout_marginRight="280dp" />
+
+
+
+    <Button
+        android:id="@+id/chdown"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/chdownbutton"
+        android:layout_below="@+id/chup"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="280dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="160dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/chback"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="30dp"/>
+
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/plusbutton"
+        android:layout_marginLeft="280dp"/>
+
+
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/minusbutton"
+        android:layout_below="@+id/plus"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="280dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

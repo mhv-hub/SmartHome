@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7a41e0</color>
+    <color name="colorPrimaryCopy">#7686df</color>
+    <color name="colorPrimaryDark">#3f51b5</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#ffffff</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#d75959</color>
+    <color name="back">#0f8174</color>
+    <color name="off">#000000</color>
+    <color name="button">#f1d593</color>
+    <color name="fragment">#cbc6bc</color>
+    <color name="msg">#4f4f4e</color>
+    <color name="fragementColor">#b7dcf0</color>
+    <color name="whiteColor">#e0dfdf</color>
+    <color name="whitelight">#cdcdcd</color>
+    <color name="blackk">#4e4d4d</color>
+    <color name="blacklight">#797878</color>
+    <color name="blackkk">#222222</color>
+    <color name="semidark">#464646</color>
+    <color name="semidarkk">#242424</color>
+    <color name="purple">#7a41e0</color>
+    <color name="w">#ffffff</color>
+    <color name="green">#1cda1c</color>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fragementColor">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/titlehelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:text="HAVING A PROBLEM...?" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="32dp">
+
+    <TextView
+        android:id="@+id/tip1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Make sure your mobile bluetooth is paired with the module."
+        android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Do not turn off bluetooth while the app is performing any operation."
+            android:layout_below="@+id/tip1"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tip3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Go to settings and allow all permissions for this app for better functioning."
+            android:layout_below="@+id/tip2"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tip4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="If there is any problem in connecting to module, switch off the module and restart the app."
+            android:layout_below="@+id/tip3"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tip5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="If you are still facing any problem contact the developers."
+            android:layout_below="@+id/tip4"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

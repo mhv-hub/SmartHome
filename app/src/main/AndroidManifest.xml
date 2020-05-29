@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smarthome.apps.jrm.jrm_connect">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".activity.SmsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.HelpActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/popupwindowtheme" />
+        <activity
+            android:name=".activity.ContactActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/popupwindowtheme" />
+        <activity
+            android:name=".activity.UsageActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/quicktheme" />
+        <activity
+            android:name=".activity.QuickActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/quicktheme" />
+        <activity
+            android:name=".activity.EntryClass"
+            android:screenOrientation="locked"
+            android:theme="@style/quicktheme" />
+        <activity
+            android:name=".activity.AuthorisedNumbersActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.DeleteConfirmationActivity"
+            android:parentActivityName=".activity.AuthorisedNumbersActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/popupwindowtheme" />
+        <activity
+            android:name=".activity.SetTimerActivity"
+            android:theme="@style/popupwindowtheme" />
+
+        <service
+            android:name=".MyTimerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.ProductKeyActivity"
+            android:theme="@style/fixedwindowtheme"></activity>
+    </application>
+
+</manifest>

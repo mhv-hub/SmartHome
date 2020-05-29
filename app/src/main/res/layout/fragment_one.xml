@@ -1,0 +1,214 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OneFragment"
+    android:background="@color/fragementColor"
+    android:id="@+id/onefraglayout">
+
+    <RelativeLayout
+        android:id="@+id/inslayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/msg"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="12dp"
+            android:text="DONT GO TO THE SWITCH BOARD, IT'S ON YOUR FINGER TIP" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:visibility="gone"
+        android:layout_below="@+id/inslayout"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/batvalue"/>
+    <Button
+        android:id="@+id/sub"
+        android:visibility="gone"
+        android:layout_below="@+id/inslayout"
+        android:layout_toEndOf="@+id/batvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/l1"
+            android:background="@drawable/btnoff"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/l2"
+            android:background="@drawable/btnoff"
+            android:layout_marginLeft="110dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/l3"
+            android:background="@drawable/btnoff"
+            android:layout_marginLeft="220dp"/>
+
+        <TextView
+            android:id="@+id/tl1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Switch 1"
+            android:layout_below="@+id/l1"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/tl2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Switch 2"
+            android:gravity="center"
+            android:layout_marginLeft="110dp"
+            android:layout_below="@+id/l2"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tl3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Switch 3"
+            android:layout_below="@+id/l3"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/f1"
+            android:background="@drawable/btnoff"
+            android:layout_below="@+id/tl1"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/f2"
+            android:background="@drawable/btnoff"
+            android:layout_below="@+id/tl2"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/f3"
+            android:background="@drawable/btnoff"
+            android:layout_below="@+id/tl3"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/tf1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Switch 4"
+            android:gravity="center"
+            android:layout_below="@+id/f1"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/tf2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Switch 5"
+            android:gravity="center"
+            android:layout_below="@+id/f2"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tf3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Switch 6"
+            android:gravity="center"
+            android:layout_below="@+id/f3"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn7"
+            android:background="@drawable/btnoff"
+            android:layout_below="@+id/tf1"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/sd"
+            android:background="@drawable/offclick"
+            android:layout_below="@+id/tf3"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn8"
+            android:background="@drawable/btnoff"
+            android:layout_below="@+id/tf2"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="30dp"/>
+
+
+        <TextView
+            android:id="@+id/tbtn7"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Switch 7"
+            android:gravity="center"
+            android:layout_below="@+id/btn7"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/tsd"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="TOGGLE SMS"
+            android:gravity="center"
+            android:layout_below="@+id/sd"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/tbtn8"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Switch 8"
+            android:gravity="center"
+            android:layout_below="@+id/btn8"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

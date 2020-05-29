@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semidark"
+    tools:context=".activity.AuthorisedNumbersActivity">
+
+
+
+    <EditText
+        android:id="@+id/newnum"
+        android:layout_marginRight="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Add a number here"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/whitelight"
+        android:inputType="phone"
+        android:textColorHint="@color/whitelight"/>
+
+    <Button
+        android:id="@+id/newNumber"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/new_num_but"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="ADD"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/whitelight"/>
+
+    <RelativeLayout
+        android:layout_marginBottom="55dp"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragementColor">
+
+        <ListView
+            android:id="@+id/num_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="55dp"
+        android:id="@+id/nolist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/asn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THIS LIST IS EMPTY"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/whitelight"/>
+
+        <TextView
+            android:layout_below="@id/asn"
+            android:id="@+id/asn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANY NUMBER CAN SEND SMS COMMANDS"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/whitelight"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

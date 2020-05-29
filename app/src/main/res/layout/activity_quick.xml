@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/transback"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/bye"
+        android:layout_width="500px"
+        android:layout_height="120px"
+        android:background="@drawable/byebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+    <Button
+        android:id="@+id/hello"
+        android:layout_width="500px"
+        android:layout_height="120px"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hellobutton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bye"/>
+    <Button
+        android:id="@+id/gm"
+        android:layout_width="500px"
+        android:layout_height="120px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gmbutton"
+        android:layout_below="@+id/hello"/>
+    <Button
+        android:id="@+id/gn"
+        android:layout_width="500px"
+        android:layout_height="120px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gnbutton"
+        android:layout_below="@+id/gm"/>
+
+</RelativeLayout>
